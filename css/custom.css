@@ -1,0 +1,30 @@
+.sidebar {
+  left: -12rem;
+  width: 12rem;
+}
+.sidebar.on {
+  left: 0;
+}
+.content.on {
+  margin-left: 0 !important;
+}
+.navbar-toggle {
+  left: 13.5rem;
+}
+.search-form-wrap {
+  right: 12rem;
+}
+@media (min-width: 768px) {
+  .outer,
+  .wrap {
+    width: 80rem !important;
+  }
+}
+@media (max-width: 768px) {
+  .tocbot {
+    display: none !important;
+  }
+  .content.on {
+    transform: translateX(12rem);
+  }
+}

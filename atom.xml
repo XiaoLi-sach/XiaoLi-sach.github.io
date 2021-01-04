@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>XiaoLi_1456</title>
+  
+  <subtitle>是阿狸啊</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2021-01-04T07:47:54.541Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>XiaoLi_1456</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>第一篇文章</title>
+    <link href="http://example.com/2020/12/26/first/"/>
+    <id>http://example.com/2020/12/26/first/</id>
+    <published>2020-12-25T16:40:04.675Z</published>
+    <updated>2021-01-04T07:47:54.541Z</updated>
+    
+    <content type="html"><![CDATA[<p>欢迎来到第一篇文章</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;欢迎来到第一篇文章&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>简单的测试呢</title>
+    <link href="http://example.com/2020/12/25/hello-world/"/>
+    <id>http://example.com/2020/12/25/hello-world/</id>
+    <published>2020-12-25T14:04:13.617Z</published>
+    <updated>2021-01-04T08:03:46.362Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to XiaoLi blog </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to XiaoLi blog &lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>

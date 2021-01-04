@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>简单的测试呢</title>
+    <url>/2020/12/25/hello-world/</url>
+    <content><![CDATA[<p>Welcome to XiaoLi blog </p>
+]]></content>
+  </entry>
+  <entry>
+    <title>第一篇文章</title>
+    <url>/2020/12/26/first/</url>
+    <content><![CDATA[<p>欢迎来到第一篇文章</p>
+]]></content>
+  </entry>
+</search>
