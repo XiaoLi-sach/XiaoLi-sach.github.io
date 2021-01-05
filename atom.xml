@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-01-04T07:47:54.541Z</updated>
+  <updated>2021-01-05T06:20:23.240Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,18 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>第一篇文章</title>
+    <title>这是一篇测试文章</title>
+    <link href="http://example.com/2021/01/05/210105/"/>
+    <id>http://example.com/2021/01/05/210105/</id>
+    <published>2021-01-05T06:19:39.380Z</published>
+    <updated>2021-01-05T06:20:23.240Z</updated>
+    
+    <content type="html"><![CDATA[<p>此文章仅供测试</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;此文章仅供测试&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>虚拟机 MacOs教程</title>
     <link href="http://example.com/2020/12/26/first/"/>
     <id>http://example.com/2020/12/26/first/</id>
     <published>2020-12-25T16:40:04.675Z</published>
-    <updated>2021-01-04T07:47:54.541Z</updated>
+    <updated>2021-01-05T06:13:49.605Z</updated>
     
-    <content type="html"><![CDATA[<p>欢迎来到第一篇文章</p>]]></content>
+    <content type="html"><![CDATA[<p>线上观看地址：<a href="https://www.bilibili.com/video/BV1RV411a7Jk/">https://www.bilibili.com/video/BV1RV411a7Jk/</a></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;欢迎来到第一篇文章&lt;/p&gt;
+    <summary type="html">&lt;p&gt;线上观看地址：&lt;a href=&quot;https://www.bilibili.com/video/BV1RV411a7Jk/&quot;&gt;https://www.bilibili.com/video/BV1RV411a7Jk/&lt;/a&gt;&lt;/p&gt;
 </summary>
       
     
