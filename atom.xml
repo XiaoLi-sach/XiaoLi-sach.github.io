@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-01-05T06:20:23.240Z</updated>
+  <updated>2021-01-08T08:16:00.220Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,18 +17,18 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>这是一篇测试文章</title>
-    <link href="http://example.com/2021/01/05/210105/"/>
-    <id>http://example.com/2021/01/05/210105/</id>
-    <published>2021-01-05T06:19:39.380Z</published>
-    <updated>2021-01-05T06:20:23.240Z</updated>
+    <title>MyBatis 基础</title>
+    <link href="http://example.com/2021/01/08/mybatis/"/>
+    <id>http://example.com/2021/01/08/mybatis/</id>
+    <published>2021-01-08T08:13:11.108Z</published>
+    <updated>2021-01-08T08:16:00.220Z</updated>
     
-    <content type="html"><![CDATA[<p>此文章仅供测试</p>]]></content>
+    <content type="html"><![CDATA[<p>MyBatis 简介： <br /></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;此文章仅供测试&lt;/p&gt;
+    <summary type="html">&lt;p&gt;MyBatis 简介： &lt;br /&gt;&lt;/p&gt;
 </summary>
       
     
@@ -42,7 +42,7 @@
     <link href="http://example.com/2020/12/26/first/"/>
     <id>http://example.com/2020/12/26/first/</id>
     <published>2020-12-25T16:40:04.675Z</published>
-    <updated>2021-01-05T06:13:49.605Z</updated>
+    <updated>2021-01-08T08:10:26.037Z</updated>
     
     <content type="html"><![CDATA[<p>线上观看地址：<a href="https://www.bilibili.com/video/BV1RV411a7Jk/">https://www.bilibili.com/video/BV1RV411a7Jk/</a></p>]]></content>
     
@@ -63,14 +63,14 @@
     <link href="http://example.com/2020/12/25/hello-world/"/>
     <id>http://example.com/2020/12/25/hello-world/</id>
     <published>2020-12-25T14:04:13.617Z</published>
-    <updated>2021-01-04T08:03:46.362Z</updated>
+    <updated>2021-01-08T08:12:29.901Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to XiaoLi blog </p>]]></content>
+    <content type="html"><![CDATA[<p>Welcome to XiaoLi blog <br /><br>本博客采用 Hexo 编写</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;Welcome to XiaoLi blog &lt;/p&gt;
+    <summary type="html">&lt;p&gt;Welcome to XiaoLi blog &lt;br /&gt;&lt;br&gt;本博客采用 Hexo 编写&lt;/p&gt;
 </summary>
       
     
