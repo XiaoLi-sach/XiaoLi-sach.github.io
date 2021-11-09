@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-04-07T13:39:53.778Z</updated>
+  <updated>2021-11-09T11:33:46.935Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>近期状态</title>
+    <link href="http://example.com/2021/11/09/%E7%89%9B%E5%AD%90/"/>
+    <id>http://example.com/2021/11/09/%E7%89%9B%E5%AD%90/</id>
+    <published>2021-11-09T11:29:37.991Z</published>
+    <updated>2021-11-09T11:33:46.935Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="牛子"><a href="#牛子" class="headerlink" title="牛子"></a>牛子</h1><p> <img src="https://xiaoli-wyy.oss-cn-hongkong.aliyuncs.com/73354916_p0.jpg" alt="牛子" title="optional title"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;牛子&quot;&gt;&lt;a href=&quot;#牛子&quot; class=&quot;headerlink&quot; title=&quot;牛子&quot;&gt;&lt;/a&gt;牛子&lt;/h1&gt;&lt;p&gt; &lt;img src=&quot;https://xiaoli-wyy.oss-cn-hongkong.aliyuncs.com/73354916_p0</summary>
+      
+    
+    
+    
+    
+    <category term="牛子" scheme="http://example.com/tags/%E7%89%9B%E5%AD%90/"/>
+    
+  </entry>
   
   <entry>
     <title>近期状态</title>
