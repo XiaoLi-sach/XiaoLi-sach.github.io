@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>windows 11安装安卓应用</title>
+    <url>/2021/12/04/win11%E5%AE%89%E8%A3%85%E5%AE%89%E5%8D%93%E5%BA%94%E7%94%A8/</url>
+    <content><![CDATA[<p>windows 11 发布已过3月， 终于是圆了发布会上说的安装安卓应用的饼， 当然不能直接点击apk文件安装，<br>需要一点骚操作</p>
+<h2 id="Let-me-help-you"><a href="#Let-me-help-you" class="headerlink" title="Let me help you"></a>Let me help you</h2><hr>
+<p>一、首先打开全新的win11 设置页面 点开更多windows 功能<br><img src="https://xiaoli-wyy.oss-cn-hongkong.aliyuncs.com/win%2011%E5%AE%89%E5%8D%93%E5%BA%94%E7%94%A8%E6%95%99%E7%A8%8B%E5%9B%BE%E7%89%87/setting.png" alt="img"><br>勾选<code>Hyper-V</code>和<code>虚拟机平台</code>, 第一个只有windows 是专业版才有， 不是专业版咋办呢， 那就只勾选一个， 然后确定等待重启完成</p>
+<hr>
+<h2 id="二、再次开启电脑后，-让我们下载一个-在windows-控制安卓的主控程序（名字太长了读不好）"><a href="#二、再次开启电脑后，-让我们下载一个-在windows-控制安卓的主控程序（名字太长了读不好）" class="headerlink" title="二、再次开启电脑后， 让我们下载一个 在windows 控制安卓的主控程序（名字太长了读不好）"></a>二、再次开启电脑后， 让我们下载一个 在windows 控制安卓的主控程序（名字太长了读不好）</h2><p>百度网盘： <a href="https://pan.baidu.com/s/1KN3nCm8_992sAQoFGhVk8Q">https://pan.baidu.com/s/1KN3nCm8_992sAQoFGhVk8Q</a> 提取码: 4au8<br>or<br>直接点击 <a href="https://xiaoli-wyy.oss-cn-hongkong.aliyuncs.com/win%2011%E5%AE%89%E5%8D%93%E5%BA%94%E7%94%A8%E6%95%99%E7%A8%8B%E5%9B%BE%E7%89%87/MicrosoftCorporationII.WindowsSubsystemForAndroid_1.7.32815.0_neutral___8wekyb3d8bbwe.Msixbundle">下载</a></p>
+<hr>
+<ul>
+<li>让我们通过命令安装<ul>
+<li>按下开始键输入 <code>powerShell</code></li>
+<li>输入 <code>cd &#39;你下载好的软件所在位置&#39;</code></li>
+<li>一般需要已管理员运行</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">Add-AppxPackage <span class="string">&quot;文件所在的路径&quot;</span></span><br></pre></td></tr></table></figure>
+<p>回车安装</p>
+<h2 id="四、-安装成功后，有报错联系我，-没报错继续-首先点开开始键，-会发现多了一个-“推荐的项目”-Windows-Subsystem-for-Android-以下简称-WSA"><a href="#四、-安装成功后，有报错联系我，-没报错继续-首先点开开始键，-会发现多了一个-“推荐的项目”-Windows-Subsystem-for-Android-以下简称-WSA" class="headerlink" title="四、 安装成功后，有报错联系我， 没报错继续, 首先点开开始键， 会发现多了一个 “推荐的项目” Windows Subsystem for Android 以下简称 WSA"></a>四、 安装成功后，有报错联系我， 没报错继续, 首先点开开始键， 会发现多了一个 “推荐的项目” Windows Subsystem for Android 以下简称 WSA</h2><p>然后怎么安装安卓应用呢</p>
+<ul>
+<li>打开 WSA 打开开发者人员模式， 然后点击文件旁边的箭头<br>回到 WSA 会看见如下图<br><img src="https://xiaoli-wyy.oss-cn-hongkong.aliyuncs.com/win%2011%E5%AE%89%E5%8D%93%E5%BA%94%E7%94%A8%E6%95%99%E7%A8%8B%E5%9B%BE%E7%89%87/wsa1.png" alt="img"></li>
+</ul>
+<p>然后我们需要安装安卓的控制程序，点击这个<a href="https://xiaoli-wyy.oss-cn-hongkong.aliyuncs.com/win%2011%E5%AE%89%E5%8D%93%E5%BA%94%E7%94%A8%E6%95%99%E7%A8%8B%E5%9B%BE%E7%89%87/adb.zip">链接</a>下载</p>
+<p>下载完成后,让我们打开系统盘（一般默认是C盘)<br>给里面两个文件拖放到这个文件夹下<br><img src="https://xiaoli-wyy.oss-cn-hongkong.aliyuncs.com/win%2011%E5%AE%89%E5%8D%93%E5%BA%94%E7%94%A8%E6%95%99%E7%A8%8B%E5%9B%BE%E7%89%87/WSA2.png" alt="img">  </p>
+<hr>
+<p>然后让我们键盘键入win + r输入cmd， 然后一次窒执行以下代码</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">adb version <span class="comment">// 查看 是否能使用adb命令</span></span><br><span class="line"></span><br><span class="line">adb connect 开发者人员模式下面的访问地址</span><br><span class="line"></span><br><span class="line"><span class="comment">// 然后就可以 cd 到又apk的目录下， 或者直接复制apk文件所在的文件夹位置</span></span><br><span class="line">adb install <span class="string">&#x27;对应apk文件所在地址&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 然后就成功咯</span></span><br></pre></td></tr></table></figure>
+<p>大概如下图：<img src="https://xiaoli-wyy.oss-cn-hongkong.aliyuncs.com/win%2011%E5%AE%89%E5%8D%93%E5%BA%94%E7%94%A8%E6%95%99%E7%A8%8B%E5%9B%BE%E7%89%87/wsa3.png" alt="img"></p>
+<hr>
+<p>这样您就可以使用安卓应用啦， 甚至可以用鼠标打音游（（（（</p>
+]]></content>
+      <tags>
+        <tag>win11 的小技巧</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>近期状态</title>
     <url>/2021/11/09/%E7%89%9B%E5%AD%90/</url>
     <content><![CDATA[<h1 id="牛子"><a href="#牛子" class="headerlink" title="牛子"></a>牛子</h1><p> <img src="https://xiaoli-wyy.oss-cn-hongkong.aliyuncs.com/73354916_p0.jpg" alt="牛子" title="optional title"></p>
