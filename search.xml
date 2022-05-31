@@ -1,6 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>手写32个js 面试题</title>
+    <url>/2022/05/30/%E6%89%8B%E5%86%9932%E4%B8%AAjs%20%E9%9D%A2%E8%AF%95%E9%A2%98/</url>
+    <content><![CDATA[<h3 id="回顾一下基础的面试题"><a href="#回顾一下基础的面试题" class="headerlink" title="回顾一下基础的面试题"></a>回顾一下基础的面试题</h3><p><code>一些代码放到github上， 可以拉去进行测试验证</code></p>
+<ol>
+<li><p>数组扁平化</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> list = [<span class="number">1</span>, [<span class="number">2</span>, <span class="number">3</span>, [<span class="number">4</span>, [<span class="number">5</span>]]]]</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> temp = list.flat() <span class="comment">// 正常情况下</span></span><br><span class="line"><span class="comment">// 如果数组嵌套过深则</span></span><br><span class="line"><span class="keyword">const</span> temp2 = list.flat(<span class="literal">Infinity</span>)</span><br></pre></td></tr></table></figure></li>
+<li><p>数组去重</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> list = [<span class="number">1</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">5</span>,<span class="number">3</span>,<span class="number">2</span>]</span><br><span class="line"></span><br><span class="line"> <span class="comment">// 语法较新</span></span><br><span class="line"><span class="keyword">const</span> temp = <span class="built_in">Array</span>.from(<span class="keyword">new</span> <span class="built_in">Set</span>(list))</span><br><span class="line"><span class="comment">// 正常我喜欢这么写</span></span><br><span class="line"><span class="keyword">const</span> temp2 = list.filter(<span class="function">(<span class="params">item, index</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> list.indexOf(item) === index;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>问： Array.from 是什么？？</p>
+<blockquote>
+<p>答：对类似数组或可迭代对象创建一个新的浅拷贝的数组实例</p>
+</blockquote>
+</blockquote>
+</li>
+<li><p>手写es6 filter方法</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Array</span>.prototype.filter = <span class="function"><span class="keyword">function</span> (<span class="params">callback, thisArg</span>) </span>&#123;</span><br><span class="line">   <span class="keyword">const</span> result = []</span><br><span class="line">   <span class="keyword">const</span> list = <span class="built_in">Object</span>(<span class="built_in">this</span>)</span><br><span class="line">   <span class="keyword">const</span> len = <span class="built_in">this</span>.length &gt;&gt;&gt; <span class="number">0</span> <span class="comment">// 必须为正整数</span></span><br><span class="line">   <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; len; i++) &#123;</span><br><span class="line">      <span class="keyword">if</span> (i <span class="keyword">in</span> list) &#123;</span><br><span class="line">         <span class="keyword">if</span> (callback.call(thisArg, list[i], i, list)) &#123;</span><br><span class="line">            result.push(list[i])</span><br><span class="line">         &#125;</span><br><span class="line">      &#125;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>手写es6 map方法</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Array</span>.prototype.map = <span class="function"><span class="keyword">function</span> (<span class="params">callback, thisArg</span>) </span>&#123;</span><br><span class="line">   <span class="keyword">const</span> result = [];</span><br><span class="line">   <span class="keyword">const</span> list = <span class="built_in">Object</span>(<span class="built_in">this</span>);</span><br><span class="line">   <span class="keyword">const</span> len = <span class="built_in">this</span>.length &gt;&gt;&gt; <span class="number">0</span>; <span class="comment">//  同上</span></span><br><span class="line">   <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; len; i++) &#123;</span><br><span class="line"></span><br><span class="line">      <span class="comment">// 调用回调， 将新的值传回去</span></span><br><span class="line">      <span class="keyword">if</span> (i <span class="keyword">in</span> list) &#123;</span><br><span class="line">         result[i] = callback.call(thisArg, list[i], i, list)</span><br><span class="line">      &#125;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>手写 function.prototype.call()</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">   </span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <tags>
+        <tag>面试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ts基础面试内容</title>
+    <url>/2022/05/30/ts%E5%9F%BA%E6%9C%AC%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<ul>
+<li><p>interface 和 type 的区别</p>
+<ul>
+<li><p>interface只能声明对象， type的右边可以是任何类型（包括对象在内）</p>
+</li>
+<li><p>扩展时表现不同</p>
+<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">interface</span> test &#123;</span><br><span class="line">    x: <span class="built_in">number</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">interface</span> test2 <span class="keyword">extends</span> test &#123;</span><br><span class="line">    x: <span class="built_in">string</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">type</span> test = &#123;</span><br><span class="line">    x: <span class="built_in">number</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">type</span> test1 = &#123;</span><br><span class="line">    x: <span class="built_in">string</span></span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="keyword">type</span> test = test &amp; test1 <span class="comment">// 这是的test 是一个 &#x27;number &amp; string&#x27;   就是never</span></span><br></pre></td></tr></table></figure></li>
+<li><p>多次定义表现不同<br>interface 可以定义多次， 多次的声明会合并<br>type定义多次会报错</p>
+</li>
+<li><p>计算属性<br>type 能使用’in’关键字 生成映射类型， 但interface 不可以</p>
+<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">type</span> list = <span class="string">&#x27;first&#x27;</span> | <span class="string">&#x27;second&#x27;</span></span><br><span class="line"><span class="keyword">type</span> DubeType = &#123;</span><br><span class="line">    [key <span class="keyword">in</span> list] :<span class="built_in">string</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> test:DubeType = &#123;</span><br><span class="line">    first: <span class="string">&#x27;11&#x27;</span>,</span><br><span class="line">    second: <span class="string">&#x27;22&#x27;</span>,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>抽象类<br>不具体的类，通常作为父类， 因为仅作为基类，不可以 new</p>
+</li>
+<li><p>.d.ts 作用</p>
+<ul>
+<li>处理引入外部的js库中js文件里变量的具体类型不明确的问题，为了告诉ts变量的类型， 所以定义.d.ts</li>
+<li>为 ts 提供有关用 js 编写的 API 的类型信息</li>
+<li>简单理解为在ts中调用js 的声明文件</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>面试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>近期面试题汇总</title>
+    <url>/2022/05/22/%E8%BF%91%E6%9C%9F%E9%9D%A2%E8%AF%95%E9%A2%98%E6%B1%87%E6%80%BB/</url>
+    <content><![CDATA[<ul>
+<li>问：TCP为什么三次握手， 两次不行吗？<ul>
+<li>答： 第一次确认客户端的发送能力  </li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>近期状态</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>windows 11安装安卓应用</title>
     <url>/2021/12/04/win11%E5%AE%89%E8%A3%85%E5%AE%89%E5%8D%93%E5%BA%94%E7%94%A8/</url>
     <content><![CDATA[<p>windows 11 发布已过3月， 终于是圆了发布会上说的安装安卓应用的饼， 当然不能直接点击apk文件安装，<br>需要一点骚操作</p>
