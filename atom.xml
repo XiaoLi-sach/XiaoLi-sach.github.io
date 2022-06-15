@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-05-31T10:26:50.821Z</updated>
+  <updated>2022-06-14T14:29:58.665Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,79 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>2022.06.14面试复盘</title>
+    <link href="http://example.com/2022/06/14/22-06-14%20%E9%9D%A2%E8%AF%95%E5%A4%8D%E7%9B%98/"/>
+    <id>http://example.com/2022/06/14/22-06-14%20%E9%9D%A2%E8%AF%95%E5%A4%8D%E7%9B%98/</id>
+    <published>2022-06-14T12:38:34.062Z</published>
+    <updated>2022-06-14T14:29:58.665Z</updated>
+    
+    <content type="html"><![CDATA[<p>1. </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;1. &lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+    <category term="面试" scheme="http://example.com/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>简历</title>
+    <link href="http://example.com/2022/06/13/%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86/"/>
+    <id>http://example.com/2022/06/13/%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86/</id>
+    <published>2022-06-13T09:59:55.807Z</published>
+    <updated>2022-06-13T11:09:30.293Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="XXX-Web-前端开发工程师"><a href="#XXX-Web-前端开发工程师" class="headerlink" title="XXX - Web 前端开发工程师"></a>XXX - Web 前端开发工程师</h3><hr><h4 id="【基本资料】"><a href="#【基本资料】" class="headerlink" title="【基本资料】"></a>【基本资料】</h4><p>姓名： xxx             年龄： 19<br>专业： 计算机应用技术  |   专科    经验： 1 年<br>电话： 17355085786          邮箱： <a href="mailto:&#88;&#105;&#97;&#111;&#x4c;&#x69;&#x5f;&#49;&#x34;&#53;&#x36;&#64;&#111;&#117;&#x74;&#108;&#111;&#111;&#x6b;&#x2e;&#x63;&#x6f;&#109;">&#88;&#105;&#97;&#111;&#x4c;&#x69;&#x5f;&#49;&#x34;&#53;&#x36;&#64;&#111;&#117;&#x74;&#108;&#111;&#111;&#x6b;&#x2e;&#x63;&#x6f;&#109;</a></p><h4 id="【专业技能】"><a href="#【专业技能】" class="headerlink" title="【专业技能】"></a>【专业技能】</h4><ul><li>熟练使用Vue全家桶, 了解Vue周边生态，能使用TypeScript 进行开发。</li><li>熟练使用弹性布局、响应式布局、能够兼容多种浏览器。</li><li>熟练使用Less、Sass 等CSS 预编译工具。</li><li>熟练使用各种 UI 组件库。</li><li>熟练使用axios 异步通信技术。</li><li>熟练使用nginx 反向代理实现跨域请求。</li><li>熟练使用版本控制系统，如SVN、Git。</li><li>有了解过桌面开发框架 electron。</li></ul><h4 id="【工作经历】"><a href="#【工作经历】" class="headerlink" title="【工作经历】"></a>【工作经历】</h4><ul><li><code>2021-07 ~ 2021-05-31</code> 合肥xxxx信息科技有限公司 – 前端开发</li></ul><h4 id="【项目经历】"><a href="#【项目经历】" class="headerlink" title="【项目经历】"></a>【项目经历】</h4><p><strong>xxx企业官网（B端 + C端）</strong></p><p><code>vue</code> <code>nuxt</code> <code>vuex</code> <code>scss</code></p><ul><li>使用<code>rem</code>和 <code>@media</code>, 基本布局上使用<code>flex</code>, 实现自适应移动端及PC端</li><li>使用<code>vue-i18n</code> 实现中英文国家化</li><li>使用<code>nuxt</code> 处理SEO等问题</li></ul><p><strong>xxx集团管理平台（B端）</strong></p><p><code>vue</code> <code>element</code> <code>vue-router</code> <code>vuex</code></p><ul><li>企业面向自己员工的管理， 客户订单的一系列操作</li><li>我参与的开发：<ul><li>开发框架的基本搭建， 常用<code>utils</code> 的方法封装</li><li>封装了一些常用的业务组件</li><li>基础模块：用户管理方面, 订单流的相关工作及逻辑上的处理</li></ul></li><li>处理了由引入组件过多导致的首页开屏以及加载缓慢, 时间较长的问题</li></ul><h4 id="【自我评价】"><a href="#【自我评价】" class="headerlink" title="【自我评价】"></a>【自我评价】</h4><p>有梦想有追求的前端工程师，对新鲜事物有很强的好奇心，不太喜欢老的技术，学习能力强，性格乐<br>观，对工作注重效率，能够根据客户需求提出自己的开发建议，对代码有一定的洁癖。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;XXX-Web-前端开发工程师&quot;&gt;&lt;a href=&quot;#XXX-Web-前端开发工程师&quot; class=&quot;headerlink&quot; title=&quot;XXX - Web 前端开发工程师&quot;&gt;&lt;/a&gt;XXX - Web 前端开发工程师&lt;/h3&gt;&lt;hr&gt;
+&lt;h4 id=&quot;【基本资</summary>
+      
+    
+    
+    
+    
+    <category term="简历" scheme="http://example.com/tags/%E7%AE%80%E5%8E%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>学习electron 过程中的收获</title>
+    <link href="http://example.com/2022/06/10/%E5%AD%A6%E4%B9%A0electron%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E6%94%B6%E8%8E%B7/"/>
+    <id>http://example.com/2022/06/10/%E5%AD%A6%E4%B9%A0electron%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E6%94%B6%E8%8E%B7/</id>
+    <published>2022-06-10T07:02:50.054Z</published>
+    <updated>2022-06-10T07:39:03.450Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="近期想点亮更多的前端技术栈，-然后浅学一下electron，-做一下总结"><a href="#近期想点亮更多的前端技术栈，-然后浅学一下electron，-做一下总结" class="headerlink" title="近期想点亮更多的前端技术栈， 然后浅学一下electron， 做一下总结"></a>近期想点亮更多的前端技术栈， 然后浅学一下electron， 做一下总结</h2><hr><h4 id=""><a href="#" class="headerlink" title=""></a></h4><ol><li><p><code>electron</code> 创建的是一个chrome 浏览器</p><ul><li>自身是一个主进程, 每个浏览的页面是渲染进程</li><li>只有一个入口文件</li></ul></li><li></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;近期想点亮更多的前端技术栈，-然后浅学一下electron，-做一下总结&quot;&gt;&lt;a href=&quot;#近期想点亮更多的前端技术栈，-然后浅学一下electron，-做一下总结&quot; class=&quot;headerlink&quot; title=&quot;近期想点亮更多的前端技术栈， 然后浅学一</summary>
+      
+    
+    
+    
+    
+    <category term="electron" scheme="http://example.com/tags/electron/"/>
+    
+  </entry>
+  
+  <entry>
     <title>手写32个js 面试题</title>
     <link href="http://example.com/2022/05/30/%E6%89%8B%E5%86%9932%E4%B8%AAjs%20%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     <id>http://example.com/2022/05/30/%E6%89%8B%E5%86%9932%E4%B8%AAjs%20%E9%9D%A2%E8%AF%95%E9%A2%98/</id>
     <published>2022-05-30T15:08:16.584Z</published>
-    <updated>2022-05-31T10:26:50.821Z</updated>
+    <updated>2022-06-14T12:37:57.185Z</updated>
     
     <content type="html"><![CDATA[<h3 id="回顾一下基础的面试题"><a href="#回顾一下基础的面试题" class="headerlink" title="回顾一下基础的面试题"></a>回顾一下基础的面试题</h3><p><code>一些代码放到github上， 可以拉去进行测试验证</code></p><ol><li><p>数组扁平化</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> list = [<span class="number">1</span>, [<span class="number">2</span>, <span class="number">3</span>, [<span class="number">4</span>, [<span class="number">5</span>]]]]</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> temp = list.flat() <span class="comment">// 正常情况下</span></span><br><span class="line"><span class="comment">// 如果数组嵌套过深则</span></span><br><span class="line"><span class="keyword">const</span> temp2 = list.flat(<span class="literal">Infinity</span>)</span><br></pre></td></tr></table></figure></li><li><p>数组去重</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> list = [<span class="number">1</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">5</span>,<span class="number">3</span>,<span class="number">2</span>]</span><br><span class="line"></span><br><span class="line"> <span class="comment">// 语法较新</span></span><br><span class="line"><span class="keyword">const</span> temp = <span class="built_in">Array</span>.from(<span class="keyword">new</span> <span class="built_in">Set</span>(list))</span><br><span class="line"><span class="comment">// 正常我喜欢这么写</span></span><br><span class="line"><span class="keyword">const</span> temp2 = list.filter(<span class="function">(<span class="params">item, index</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> list.indexOf(item) === index;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><blockquote><p>问： Array.from 是什么？？</p><blockquote><p>答：对类似数组或可迭代对象创建一个新的浅拷贝的数组实例</p></blockquote></blockquote></li><li><p>手写es6 filter方法</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Array</span>.prototype.filter = <span class="function"><span class="keyword">function</span> (<span class="params">callback, thisArg</span>) </span>&#123;</span><br><span class="line">   <span class="keyword">const</span> result = []</span><br><span class="line">   <span class="keyword">const</span> list = <span class="built_in">Object</span>(<span class="built_in">this</span>)</span><br><span class="line">   <span class="keyword">const</span> len = <span class="built_in">this</span>.length &gt;&gt;&gt; <span class="number">0</span> <span class="comment">// 必须为正整数</span></span><br><span class="line">   <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; len; i++) &#123;</span><br><span class="line">      <span class="keyword">if</span> (i <span class="keyword">in</span> list) &#123;</span><br><span class="line">         <span class="keyword">if</span> (callback.call(thisArg, list[i], i, list)) &#123;</span><br><span class="line">            result.push(list[i])</span><br><span class="line">         &#125;</span><br><span class="line">      &#125;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>手写es6 map方法</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Array</span>.prototype.map = <span class="function"><span class="keyword">function</span> (<span class="params">callback, thisArg</span>) </span>&#123;</span><br><span class="line">   <span class="keyword">const</span> result = [];</span><br><span class="line">   <span class="keyword">const</span> list = <span class="built_in">Object</span>(<span class="built_in">this</span>);</span><br><span class="line">   <span class="keyword">const</span> len = <span class="built_in">this</span>.length &gt;&gt;&gt; <span class="number">0</span>; <span class="comment">//  同上</span></span><br><span class="line">   <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; len; i++) &#123;</span><br><span class="line"></span><br><span class="line">      <span class="comment">// 调用回调， 将新的值传回去</span></span><br><span class="line">      <span class="keyword">if</span> (i <span class="keyword">in</span> list) &#123;</span><br><span class="line">         result[i] = callback.call(thisArg, list[i], i, list)</span><br><span class="line">      &#125;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>手写 function.prototype.call()</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">   </span><br></pre></td></tr></table></figure></li></ol>]]></content>
     
