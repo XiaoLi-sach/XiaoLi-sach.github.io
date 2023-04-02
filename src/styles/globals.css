@@ -1,9 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .divider {
+    @apply box-content my-12 h-px dark:bg-zinc-800 dark:border-black transition-colors;
+  }
+}
+
 :root {
-  --max-width: 1100px;
+  --max-width: 1400px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --font-mono: 'Comfortaa', ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono',
+    'Droid Sans Mono', 'Courier New', monospace;
 
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -17,10 +27,7 @@
     #0071ff33 160deg,
     transparent 360deg
   );
-  --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
+  --secondary-glow: radial-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 
   --tile-start-rgb: 239, 245, 249;
   --tile-end-rgb: 228, 232, 233;
@@ -38,6 +45,14 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
+
+  --background-color: #ffffff; /* 日间模式下的背景颜色 */
+  --text-color: #333333; /* 日间模式下的文本颜色 */
+  --night-background-color: #000000; /* 夜间模式下的背景颜色 */
+  --night-text-color: #ffffff; /* 夜间模式下的文本颜色 */
+  --night-mode: false; /* 夜间模式开关 */
+
+  --background-rgb: var(--background-start-rgb);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -77,6 +92,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: var(--font-mono);
 }
 
 html,
@@ -87,12 +103,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: linear-gradient(to bottom, transparent, #ffffff 50%) rgb(var(--background-start-rgb));
 }
 
 a {
@@ -104,4 +115,10 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+button,
+input,
+textarea {
+  outline: none;
 }

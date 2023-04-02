@@ -1,0 +1,16 @@
+---
+title: Ierator 和 for ...of 循环
+tag: ES6标准入门阅读总结
+---
+
+`Iterator `被挂载在对象的 `Symbol.iterator` 属性下， `Symbol.iterator` 不是`Iterator`， 而是返回 `Iterator `的函数。
+
+~~~js
+const arr = [1,2,3,4,5]
+let iterator = arr[Symbol.iterator]();
+iterator // Array Iterator {}
+iterator.next() // {value: 1, done: false}
+----------
+iterator.next() // {value: 5, done: false}
+iterator.next() // {value: undefined, done: true}
+~~~

@@ -1,0 +1,52 @@
+.card {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 128px rgba(0, 155, 181, 0.11));
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box;
+
+  .body {
+    margin-top: 0.5rem;
+
+    .content {
+    }
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+    .title {
+    }
+
+    .tag {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 17px;
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+
+  .footerItem {
+    display: flex;
+  }
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: rgb(var(--card-border-rgb));
+  margin: 1rem 0;
+}

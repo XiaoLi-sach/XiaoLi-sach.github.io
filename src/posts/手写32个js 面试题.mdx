@@ -1,0 +1,74 @@
+---
+title: 手写32个js 面试题
+tag: 面试
+---
+
+### 回顾一下基础的面试题
+
+`一些代码放到github上， 可以拉去进行测试验证`
+
+1. 数组扁平化
+
+   ```javascript
+   const list = [1, [2, 3, [4, [5]]]]
+
+   const temp = list.flat() // 正常情况下
+   // 如果数组嵌套过深则
+   const temp2 = list.flat(Infinity)
+   ```
+
+2. 数组去重
+
+   ```javascript
+   const list = [1,1,2,3,4,4,5,5,3,2]
+
+    // 语法较新
+   const temp = Array.from(new Set(list))
+   // 正常我喜欢这么写
+   const temp2 = list.filter((item, index) => {
+       return list.indexOf(item) === index;
+   })
+   ```
+
+   > 问： Array.from 是什么？？
+   >> 答：对类似数组或可迭代对象创建一个新的浅拷贝的数组实例
+
+3. 手写es6 filter方法
+
+   ```javascript
+   Array.prototype.filter = function (callback, thisArg) {
+      const result = []
+      const list = Object(this)
+      const len = this.length >>> 0 // 必须为正整数
+      for (let i = 0; i < len; i++) {
+         if (i in list) {
+            if (callback.call(thisArg, list[i], i, list)) {
+               result.push(list[i])
+            }
+         }
+      }
+   }
+   ```
+
+4. 手写es6 map方法
+
+   ```javascript
+   Array.prototype.map = function (callback, thisArg) {
+      const result = [];
+      const list = Object(this);
+      const len = this.length >>> 0; //  同上
+      for (let i = 0; i < len; i++) {
+
+         // 调用回调， 将新的值传回去
+         if (i in list) {
+            result[i] = callback.call(thisArg, list[i], i, list)
+         }
+      }
+   }
+   ```
+
+5. 手写 function.prototype.call()
+
+   ```javascript
+   
+   ```
