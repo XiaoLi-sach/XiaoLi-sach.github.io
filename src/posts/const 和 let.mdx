@@ -1,0 +1,38 @@
+---
+title: const 和 let
+tag: ES6标准入门阅读总结
+---
+
+测试
+![好家伙](https://cdn.jsdelivr.net/gh/XiaoLi-sach/source@main/images/cover1.jpg, "初音")
+
+---
+
+##### **1. 暂时性死区**
+
+- `let 和 const` 命令声明的变量五变量提升， 在命令执行前， 使用该变量都将报错， 这一部分成为‘‘暂时性死区‘’
+
+- `let tmp` 将`tmp` 变量绑定到 `{}` 代码块之内， 外部的`tmp `声明无效，` tmp = ‘abc’` 就处在死去， 所以报错。 同理在以前没有 let 和 `const `命令的时候， `typeof `是一个安全的运算符， 即使变量没有被声明， 也会正常返回 `undefined `， 但如果`typeof`处在死区中， 处理后了在后文被`let `和 `const `的变量 将会报错。
+
+---
+
+##### **2. 顶层对象**
+
+- var 和 function 的全局声明会自动绑定到 window 或 global 对象， 这是 es 5 全局变量的一个缺陷， let 和 const 不会、
+
+---
+
+##### **3. const 命令**
+
+- const 声明的变量只是引用无法修改， 对象的内部结构可以改变， 使用 Object.freeze() 可以彻底锁定某对象， 需递归锁定多层级对象。
+
+```js
+var constantize = (obj) => {
+  Object.freeze(obj);
+  Object.keys(obj).forEach((key, i) => {
+    if (typeof obj[key] === "object") {
+      constantize(obj[key]);
+    }
+  });
+};
+```

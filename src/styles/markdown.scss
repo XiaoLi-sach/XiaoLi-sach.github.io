@@ -1,0 +1,215 @@
+.markdown-body {
+  font-size: 16px;
+  line-height: 1.75;
+  overflow-wrap: break-word;
+}
+
+.markdown-body p,
+.markdown-body table {
+  @apply my-6;
+}
+
+// Headings
+.markdown-body .anchor {
+  @apply text-zinc-900 no-underline;
+}
+.markdown-body .anchor:hover::after {
+  content: ' #';
+  @apply text-gray-500;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  @apply my-6 font-bold;
+}
+
+/* h1-h6 */
+
+.markdown-body > h1:first-child,
+h1 {
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  font-weight: normal;
+  font-size: 3em;
+  text-align: center;
+  color: #000000;
+}
+
+h2 {
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  font-size: 2.2em;
+  font-weight: normal;
+  /*	text-align: center;*/
+  color: deeppink;
+}
+
+h3 {
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  font-weight: normal;
+  /* font-style: italic; */
+  font-size: 1.6em;
+  /* text-align: center; */
+  color: rgb(250, 250, 66);
+}
+
+h4 {
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  font-size: 1.2em;
+  color: darkseagreen;
+}
+
+.markdown-body h1 {
+  font-size: 2.25rem;
+}
+.markdown-body h2 {
+  font-size: 1.65rem;
+}
+.markdown-body h3 {
+  font-size: 1.25rem;
+}
+.markdown-body h4 {
+  font-size: 1.15rem;
+}
+.markdown-body h5 {
+  font-size: 1rem;
+}
+.markdown-body h6 {
+  font-size: 0.875rem;
+}
+
+.markdown-body blockquote p {
+  @apply m-0;
+}
+
+// NoteBlock
+.markdown-body .note {
+  @apply relative px-8 py-6 my-12 sm:rounded-[3px] border-l-[3px];
+}
+.markdown-body .note p {
+  @apply m-0;
+}
+.markdown-body .note ul,
+.markdown-body .note ol {
+  @apply pl-0;
+}
+.markdown-body .note::before {
+  @apply absolute bg-white rounded-full;
+  left: -26.5px;
+  top: -26.5px;
+  width: 50px;
+  height: 50px;
+}
+.markdown-body .note.tip {
+  @apply bg-blue-300/30 border-blue-600;
+}
+//.markdown-body .note.tip::before { content: url('/tip.svg'); }
+.markdown-body .note.warning {
+  @apply bg-yellow-300/30 border-yellow-400;
+}
+//.markdown-body .note.warning::before { content: url('/warning.svg'); }
+.markdown-body .note.danger {
+  @apply bg-rose-300/30 border-rose-500;
+}
+//.markdown-body .note.danger::before { content: url('/danger.svg'); }
+
+// Emphasis
+.markdown-body em {
+  opacity: 0.7;
+}
+
+// InlineCode
+.markdown-body code {
+  @apply text-pink-500 font-medium;
+  &::before,
+  &::after {
+    content: '`';
+  }
+}
+
+// Image
+.markdown-body img {
+  @apply relative max-w-full h-auto align-middle;
+}
+
+// TODO: 和 globals.css 重复，可以通过这种方式全局声明 https://tailwindcss.com/docs/functions-and-directives#apply
+.markdown-body hr {
+  @apply box-content my-12 h-px transition-colors;
+}
+
+// Link
+.markdown-body a {
+  padding: 0 2px;
+  @apply font-medium underline hover:brightness-75 transition;
+}
+.markdown-body a:hover {
+  @apply underline;
+}
+//.markdown-body a code { @apply ; }
+
+// Table
+.markdown-body table {
+  @apply w-full text-left border-collapse;
+}
+.markdown-body table thead,
+.markdown-body table tbody tr:not(:last-child) {
+  @apply border-b border-slate-200/50;
+}
+.markdown-body table th {
+  @apply p-2.5 whitespace-nowrap;
+}
+.markdown-body table td {
+  @apply p-2.5;
+}
+
+// List
+.markdown-body ul,
+.markdown-body ul p,
+.markdown-body ol p {
+  margin: 0;
+}
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 1rem;
+}
+.markdown-body ol {
+  counter-reset: list-item;
+}
+.markdown-body ol li {
+  counter-increment: list-item;
+}
+.markdown-body ol li::before {
+  content: counter(list-item) '. ';
+  min-width: 20px;
+  font-feature-settings: 'tnum';
+  @apply mr-2 font-medium;
+}
+
+/* dark mode */
+[data-theme='dark'] .markdown-body {
+  .anchor {
+    @apply text-zinc-50;
+  }
+
+  hr {
+    @apply bg-zinc-800 border-black;
+  }
+
+  table {
+    thead,
+    tbody tr:not(:last-child) {
+      @apply border-b;
+    }
+  }
+
+  //.note { @apply bg-night; }
+  .note::before {
+    @apply bg-zinc-900;
+  }
+}

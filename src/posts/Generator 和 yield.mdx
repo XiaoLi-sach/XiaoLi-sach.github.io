@@ -1,0 +1,24 @@
+---
+title: Generator 和 yield
+tag: ES6标准入门阅读总结
+---
+
+`Generator `会生成一个 `Iterator `， 每次 `Iterator.next() `返回 `yield `的产出值， 且中断程序执行。 代码如下：
+
+~~~js
+function* demo() {
+	console.log(`${yield 1}`)
+	console.log(`${yield 2}`)
+	yield* demo2()
+}
+function* demo2() {
+	yield 3
+}
+let ite = demo()
+ite.next() // 返回值： {value: 1, done: false}
+ite.next() // console: undefined, 返回值：{value: 2, done: false}
+ite.next(123456789) //console: 123456789, 返回值： {value: 3, done: false}
+~~~
+
+第一次`ite.next()` 时， 程序执行到` yield 1 `被终止， 故没有打印日志， 再次执行` ite.next()` 时， 代码继续， 开始执行`console.log('${yield 1}') ` 但输出不是1 而是 `undefiend `，因为` ite.next() `的参数值会被当做上次`yield `语句的执行结果， 所以下面的`ite.next(123456789)` 会输出数字 `123456789`
+

@@ -1,0 +1,61 @@
+---
+title: 变量的解构赋值
+tag: ES6标准入门阅读总结
+---
+
+***
+
+##### 1. 解构时分为匹配模式和被赋值的变量， 若相同可简写， 注意区分
+
+~~~ js
+let { matchValue } = { matchValue: 123 }
+console.log(matchValue)
+
+// 相当于 =
+
+let { matchValue: matchValue } = { matchValue: 123 }
+console.log(matchValue)
+
+// 所以 ==
+let { matchValue: value } = { matchValue: 123 }
+console.log(matchValue) // 报未定义错误， 只是匹配模式， 不会被赋值
+console.log(value) // 123
+~~~
+
+##### 2. 函数参数
+
+首先解构赋值允许指定默认值， 这为函数参数设置默认值提供基础
+
+~~~ js
+// 数组解构赋值的默认值
+let [x, y = 'b'] = ['a'] // x= 'a', y= 'b'
+let [x = 'a', y = 'b'] = ['aa', undefined] // x='aa', y='b' 
+
+// 对象解构赋值的默认值
+let { x, y = 5} = { x: 1 }
+x//1
+y//5
+
+~~~
+***
+这里只讨论一下参数为`object` 类型时， 该如何设置默认值， 比如一些 options 的设置， 通过设置默认值， 可有效避免` var foo =options.foo || 'default foo';` 有三种形式， 注意这三种的区别： 
+~~~ js
+const ajax1 = function (url, {type = 'GET', dataType } = {} ) {
+	//TODO
+}
+const ajax2 = function (url, {} ={type = 'GET', dataType = 'json'}) {
+	//TODO
+}
+const ajax3 = function (url, {type= 'GET', dataType = 'json'}) {
+	//TODO
+}
+~~~
+   - `ajax1` 的默认参数表示， 如果没有传入`options` ，则用一个没有键值对的对象（） 作为默认值， 正应如此 ，传入的`options` 没有`options.type` 和 `options.dataType` 这两个属性， 则赋予默认值 `type = 'GET' , dataType = 'json'` ， 这是针对键值对某一个 `key`设默认值。
+   - `ajax2` 的默认参数表示， 如果没有传入`options` 对象， 则用一个 `{type = 'GET', dataType = 'json'}` 这样的`options` 对象作为默认值， 这是争对一整个`options` 设默认值， 弊端就是如果开发者在使用时 这样写： 
+~~~ js
+ajax2(url, {type= 'POST'})
+~~~
+那么 `dataType` 参数将要丢失， 因为` {type = 'POST'} `代替了默认参数 `{ type = 'GET'， dataType = ’JSON‘}`,  所以一般通过形如`ajax1` 的方式定义默认参数。
+
+   - `ajax3` 的默认参数有一个问题， 就是当没有传入`options` 的时候， 相当于从`undefined` 中取值 `type, dataType` 来解构，
+所以会报错。  就是这样 `ajax1` 才会通过` = {} `的方式， 把不传入`options` 的情况过滤掉。

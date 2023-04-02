@@ -1,0 +1,55 @@
+---
+title: ts基础面试内容
+tag: 面试
+---
+
+
+- interface 和 type 的区别
+  - interface只能声明对象， type的右边可以是任何类型（包括对象在内）
+  - 扩展时表现不同
+
+    ```typescript
+    interface test {
+        x: number
+    }
+    interface test2 extends test {
+        x: string
+    }
+    ```
+
+    ```typescript
+    type test = {
+        x: number
+    }
+    type test1 = {
+        x: string
+    } 
+
+    type test = test & test1 // 这是的test 是一个 'number & string'   就是never
+    ```
+
+  - 多次定义表现不同
+    interface 可以定义多次， 多次的声明会合并
+    type定义多次会报错
+
+  - 计算属性
+    type 能使用'in'关键字 生成映射类型， 但interface 不可以
+
+    ```typescript
+    type list = 'first' | 'second'
+    type DubeType = {
+        [key in list] :string
+    }
+    const test:DubeType = {
+        first: '11',
+        second: '22',
+    }
+    ```
+
+- 抽象类
+  不具体的类，通常作为父类， 因为仅作为基类，不可以 new
+
+- .d.ts 作用
+  - 处理引入外部的js库中js文件里变量的具体类型不明确的问题，为了告诉ts变量的类型， 所以定义.d.ts
+  - 为 ts 提供有关用 js 编写的 API 的类型信息
+  - 简单理解为在ts中调用js 的声明文件

@@ -1,0 +1,70 @@
+---
+title: windows 11安装安卓应用
+tag: win11 的小技巧
+---
+
+windows 11 发布已过3月， 终于是圆了发布会上说的安装安卓应用的饼， 当然不能直接点击apk文件安装，
+需要一点骚操作
+
+## Let me help you
+
+-----
+一、首先打开全新的win11 设置页面 点开更多windows 功能
+![img](https://xiaoli-wyy.oss-cn-hongkong.aliyuncs.com/win%2011%E5%AE%89%E5%8D%93%E5%BA%94%E7%94%A8%E6%95%99%E7%A8%8B%E5%9B%BE%E7%89%87/setting.png)
+勾选``Hyper-V``和``虚拟机平台``, 第一个只有windows 是专业版才有， 不是专业版咋办呢， 那就只勾选一个， 然后确定等待重启完成
+
+------
+
+二、再次开启电脑后， 让我们下载一个 在windows 控制安卓的主控程序（名字太长了读不好）
+------
+
+百度网盘： [https://pan.baidu.com/s/1KN3nCm8_992sAQoFGhVk8Q](https://pan.baidu.com/s/1KN3nCm8_992sAQoFGhVk8Q) 提取码: 4au8
+or
+直接点击 [下载](https://xiaoli-wyy.oss-cn-hongkong.aliyuncs.com/win%2011%E5%AE%89%E5%8D%93%E5%BA%94%E7%94%A8%E6%95%99%E7%A8%8B%E5%9B%BE%E7%89%87/MicrosoftCorporationII.WindowsSubsystemForAndroid_1.7.32815.0_neutral___8wekyb3d8bbwe.Msixbundle)
+
+------
+
+- 让我们通过命令安装
+  - 按下开始键输入 ``powerShell``
+  - 输入 ```cd '你下载好的软件所在位置'```
+  - 一般需要已管理员运行
+
+```javascript
+Add-AppxPackage "文件所在的路径"
+```
+
+回车安装
+
+四、 安装成功后，有报错联系我， 没报错继续, 首先点开开始键， 会发现多了一个 “推荐的项目” Windows Subsystem for Android 以下简称 WSA
+-------
+
+然后怎么安装安卓应用呢
+
+- 打开 WSA 打开开发者人员模式， 然后点击文件旁边的箭头
+回到 WSA 会看见如下图
+![img](https://xiaoli-wyy.oss-cn-hongkong.aliyuncs.com/win%2011%E5%AE%89%E5%8D%93%E5%BA%94%E7%94%A8%E6%95%99%E7%A8%8B%E5%9B%BE%E7%89%87/wsa1.png)
+
+然后我们需要安装安卓的控制程序，点击这个[链接](https://xiaoli-wyy.oss-cn-hongkong.aliyuncs.com/win%2011%E5%AE%89%E5%8D%93%E5%BA%94%E7%94%A8%E6%95%99%E7%A8%8B%E5%9B%BE%E7%89%87/adb.zip)下载
+
+下载完成后,让我们打开系统盘（一般默认是C盘)
+给里面两个文件拖放到这个文件夹下
+![img](https://xiaoli-wyy.oss-cn-hongkong.aliyuncs.com/win%2011%E5%AE%89%E5%8D%93%E5%BA%94%E7%94%A8%E6%95%99%E7%A8%8B%E5%9B%BE%E7%89%87/WSA2.png)
+
+-------
+然后让我们键盘键入win + r输入cmd， 然后一次窒执行以下代码
+
+```java
+adb version // 查看 是否能使用adb命令
+
+adb connect 开发者人员模式下面的访问地址
+
+// 然后就可以 cd 到又apk的目录下， 或者直接复制apk文件所在的文件夹位置
+adb install '对应apk文件所在地址'
+
+// 然后就成功咯
+```
+
+大概如下图：![img](https://xiaoli-wyy.oss-cn-hongkong.aliyuncs.com/win%2011%E5%AE%89%E5%8D%93%E5%BA%94%E7%94%A8%E6%95%99%E7%A8%8B%E5%9B%BE%E7%89%87/wsa3.png)
+
+------
+这样您就可以使用安卓应用啦， 甚至可以用鼠标打音游（（（（
