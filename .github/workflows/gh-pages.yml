@@ -1,15 +1,9 @@
-# Sample workflow for building and deploying a Next.js site to GitHub Pages
-#
-# To get started with Next.js see: https://nextjs.org/docs/getting-started
-#
-name: Deploy Next.js site to Pages
+name: Github Pages
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
 
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
@@ -29,38 +23,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Detect package manager
-        id: detect-package-manager
-        run: |
-          if [ -f "${{ github.workspace }}/pnpm-lock.yaml" ]; then
-            echo "manager=pnpm" >> $GITHUB_OUTPUT
-            echo "command=install" >> $GITHUB_OUTPUT
-            echo "runner=pnpm" >> $GITHUB_OUTPUT
-            exit 0
-          elif [ -f "${{ github.workspace }}/package.json" ]; then
-            echo "manager=npm" >> $GITHUB_OUTPUT
-            echo "command=ci" >> $GITHUB_OUTPUT
-            echo "runner=npx --no-install" >> $GITHUB_OUTPUT
-            exit 0
-          else
-            echo "Unable to determine package manager"
-            exit 1
-          fi
+      - uses: actions/checkout@v3
+
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: "18"
-          cache: ${{ steps.detect-package-manager.outputs.manager }}
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-        with:
-          # Automatically inject basePath in your Next.js configuration file and disable
-          # server side image optimization (https://nextjs.org/docs/api-reference/next/image#unoptimized).
-          #
-          # You may remove this line if you want to manage the configuration yourself.
-          static_site_generator: next
+          node-version: '18'
+
       - name: Restore cache
         uses: actions/cache@v3
         with:
