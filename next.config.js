@@ -3,9 +3,9 @@
 const nextConfig = {
   reactStrictMode: true,
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
-  images: {
-    loader: 'custom'
-  },
+  // images: {
+  //   loader: 'custom'
+  // },
   sassOptions: {
     includePaths: ['./src']
   }
