@@ -7,7 +7,7 @@ export default function layout({ children }: any) {
   }
 
   return (
-    <div className={`bg-white dark:bg-black dark:bg-slate-800 ${styles.container}`}>
+    <div className={`bg-white dark:bg-black dark:bg-slate-800 prose max-w-full prose-slate dark:prose-invert ${styles.container}`}>
       <div className={styles.containerBody}>
         <Navbar onClick={handleMoonClick} />
         <main>{children}</main>

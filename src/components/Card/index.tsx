@@ -14,7 +14,7 @@ interface Props {
 function index(props: Props) {
   return (
     <div
-      className={styles.card}
+      className={`${styles.card} bg-white prose dark:prose-invert dark:border-gray-700 dark:bg-slate-800`}
       style={{
         width: props.width || '800px',
         height: props.height
@@ -22,7 +22,7 @@ function index(props: Props) {
     >
       <div className={styles.header}>
         <div className={styles.title}>{props.title}</div>
-        <div className={styles.tag}>{props.tag}</div>
+        <div className={`${styles.tag} mt-1`}>{props.tag}</div>
       </div>
       <div className={styles.body}>
         <div className={styles.content}>{props.content}</div>
@@ -42,7 +42,17 @@ function index(props: Props) {
           </div>
         </div>
 
-        <button className="btn btn-primary btn-sm" onClick={props.handleClick}>
+        <button
+          className={
+            `${styles.btn}
+            border-solid
+            border-2
+            border-black
+            active:bg-blue-200
+            dark:border-white
+            `
+          }
+          onClick={props.handleClick}>
           阅读更多
         </button>
       </div>

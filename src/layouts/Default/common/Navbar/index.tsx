@@ -12,7 +12,7 @@ function navbar(props: Props) {
   const router = useRouter()
 
   return (
-    <div className={styles.navbar}>
+    <div className={`${styles.navbar}`}>
       <div style={{ fontSize: '2.5rem' }} onClick={() => router.push('/')}>
         Home
       </div>

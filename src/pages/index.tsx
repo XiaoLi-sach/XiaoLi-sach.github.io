@@ -14,8 +14,6 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>{config.name} | Home</title>
-        <meta name="description" content="XiaoLi-sach’s blog" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.jpeg" />
       </Head>

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Head from 'next/head'
 import { serialize } from 'next-mdx-remote/serialize'
 import { GetStaticProps, GetStaticPaths } from 'next'
 import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote'
@@ -70,28 +71,35 @@ const PostPage: React.FC<Props> = ({ source, frontMatter }: Props) => {
   }, [setPrerequisites, setStacks, frontMatter.prerequisites, frontMatter.stacks])
 
   return (
-    <MdxContext.Provider
-      value={{
-        prerequisites,
-        setPrerequisites,
-        stacks,
-        setStacks
-      }}
-    >
-      <DefaultLayout>
-        <article className="prose prose-xl prose-slate dark:prose-invert dark:bg-slate-800 w-full mt-10 p-3">
-          {/*<div className="mb-4">*/}
-          {/*  <XImg title={frontMatter.title} src={frontMatter.thumbnail} />*/}
-          {/*</div>*/}
+    <>
+      <Head>
+        <title>{frontMatter.title}</title>
+        <meta name="description" content={frontMatter.title} />
+        <meta name="keywords" content={frontMatter.title} />
+      </Head>
+      <MdxContext.Provider
+        value={{
+          prerequisites,
+          setPrerequisites,
+          stacks,
+          setStacks
+        }}
+      >
+        <DefaultLayout>
+          <article className="prose prose-xl prose-slate dark:prose-invert dark:bg-slate-800 w-full mt-10 p-3">
+            {/*<div className="mb-4">*/}
+            {/*  <XImg title={frontMatter.title} src={frontMatter.thumbnail} />*/}
+            {/*</div>*/}
 
-          <h1>{frontMatter.title}</h1>
+            <h1>{frontMatter.title}</h1>
 
-          {/*<p>{frontMatter.description}</p>*/}
+            {/*<p>{frontMatter.description}</p>*/}
 
-          <MDXRemote components={components} {...source} />
-        </article>
-      </DefaultLayout>
-    </MdxContext.Provider>
+            <MDXRemote components={components} {...source} />
+          </article>
+        </DefaultLayout>
+      </MdxContext.Provider>
+    </>
   )
 }
 

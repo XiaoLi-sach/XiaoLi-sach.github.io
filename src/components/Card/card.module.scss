@@ -1,5 +1,5 @@
 .card {
-  background: #ffffff;
+  //background: #ffffff;
   border: 1px solid #ffffff;
   filter: drop-shadow(0px 4px 128px rgba(0, 155, 181, 0.11));
   border-radius: 8px;
@@ -24,6 +24,7 @@
     margin-bottom: 1rem;
 
     .title {
+      font-size: 1.3rem;
     }
 
     .tag {
@@ -37,7 +38,6 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  margin-top: 1rem;
 
   .footerItem {
     display: flex;
@@ -49,4 +49,10 @@
   height: 1px;
   background: rgb(var(--card-border-rgb));
   margin: 1rem 0;
+}
+
+.btn {
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 0.2rem 0.5rem;
 }

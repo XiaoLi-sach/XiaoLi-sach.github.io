@@ -7,8 +7,21 @@ module.exports = {
   ],
   purge: ['./src/components/**/*.tsx', './src/pages/**/*.tsx'],
   theme: {
-    extend: {}
+    extend: {
+      typography: (theme) => ({
+        DEFAULT: {
+          css: [
+            {
+              color: 'var(--tw-prose-body)',
+              maxWidth: '100vw',
+            }
+          ]
+        }
+      })
+    }
   },
   darkMode: 'class', // or 'media' or 'class'
-  plugins: [require('@tailwindcss/typography')]
+  plugins: [
+    require('@tailwindcss/typography'),
+  ]
 }
