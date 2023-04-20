@@ -8,5 +8,5 @@ export interface NavbarConfig {
   darkMode: boolean // 是否展示暗黑模式按钮
   navbarItem: NavbarItemConfig[] // 导航栏配置
   // TODO 以下配置项暂时不支持 后续会逐步支持
-  dev: boolean // 是否启用实验模式
+  dev?: boolean // 是否启用实验模式
 }
