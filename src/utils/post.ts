@@ -14,7 +14,7 @@ type Post = {
 }
 
 // 存放文章的路径
-const POSTS_PATH = join(process.cwd(), 'src/posts')
+const POSTS_PATH = join(process.cwd(), 'posts')
 
 function getPostsFilePaths(): string[] {
   return fs.readdirSync(POSTS_PATH).filter((path) => /\.mdx?$/.test(path))

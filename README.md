@@ -1,5 +1,6 @@
 # XiaoLi-sach
-我的个人博客，使用next.js, Typescript, Mdx 以及 TailwindCSS 构建。
+
+我的个人博客，使用 next.js, Typescript, Mdx 以及 TailwindCSS 构建。
 
 当然这也是一个播客模板，你可以使用它来构建你自己的播客。
 
@@ -37,10 +38,10 @@
 ## 功能
 
 - [ ] 响应式
-- [ ] SEO优化
+- [ ] SEO 优化
 - [ ] 评论
 - [x] 播客
 - [x] 搜索
 - [ ] 音乐播放器
-- [X] 夜间模式
+- [x] 夜间模式
 - [ ] 评论

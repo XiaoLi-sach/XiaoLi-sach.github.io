@@ -1,7 +1,27 @@
 .main {
   height: 100%;
   display: flex;
+  justify-content: space-between;
+}
 
-  .left {
+.left {
+  width: 100%;
+}
+
+.right {
+  flex: 1;
+  margin-left: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    padding: 0.5rem;
   }
+  .right {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
 }

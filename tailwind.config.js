@@ -13,7 +13,7 @@ module.exports = {
           css: [
             {
               color: 'var(--tw-prose-body)',
-              maxWidth: '100vw',
+              maxWidth: '100vw'
             }
           ]
         }
@@ -21,7 +21,5 @@ module.exports = {
     }
   },
   darkMode: 'class', // or 'media' or 'class'
-  plugins: [
-    require('@tailwindcss/typography'),
-  ]
+  plugins: [require('@tailwindcss/typography')]
 }

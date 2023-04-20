@@ -138,7 +138,7 @@ h4 {
   @apply relative max-w-full h-auto align-middle;
 }
 
-// TODO: 和 globals.css 重复，可以通过这种方式全局声明 https://tailwindcss.com/docs/functions-and-directives#apply
+// TODO: 和 globals.scss 重复，可以通过这种方式全局声明 https://tailwindcss.com/docs/functions-and-directives#apply
 .markdown-body hr {
   @apply box-content my-12 h-px transition-colors;
 }

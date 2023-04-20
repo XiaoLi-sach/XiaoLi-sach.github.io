@@ -1,4 +1,6 @@
 import styles from './card.module.scss'
+import Image from 'next/image'
+import Icon from '@/components/Icon'
 
 interface Props {
   title: string
@@ -16,13 +18,16 @@ function index(props: Props) {
     <div
       className={`${styles.card} bg-white prose dark:prose-invert dark:border-gray-700 dark:bg-slate-800`}
       style={{
-        width: props.width || '800px',
+        width: props.width || '100%',
         height: props.height
       }}
     >
       <div className={styles.header}>
         <div className={styles.title}>{props.title}</div>
-        <div className={`${styles.tag} mt-1`}>{props.tag}</div>
+        <div className={`${styles.tag} mt-1`}>
+          <Icon src="/svgs/tag.svg" alt="" width={18} height={18} />
+          {props.tag}
+        </div>
       </div>
       <div className={styles.body}>
         <div className={styles.content}>{props.content}</div>
@@ -33,7 +38,7 @@ function index(props: Props) {
       <div className={styles.footer}>
         <div className={styles.footerItem}>
           <div className="post-create-time">
-            <i className="icon icon-calendar"></i>
+            <Icon src="/svgs/timer.svg" alt="" width={18} height={18} />
             {props.createTime}
           </div>
           <div className="post-update-time">
@@ -43,16 +48,15 @@ function index(props: Props) {
         </div>
 
         <button
-          className={
-            `${styles.btn}
+          className={`${styles.btn}
             border-solid
             border-2
             border-black
             active:bg-blue-200
             dark:border-white
-            `
-          }
-          onClick={props.handleClick}>
+            `}
+          onClick={props.handleClick}
+        >
           阅读更多
         </button>
       </div>

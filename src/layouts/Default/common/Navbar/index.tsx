@@ -13,7 +13,7 @@ function navbar(props: Props) {
 
   return (
     <div className={`${styles.navbar}`}>
-      <div style={{ fontSize: '2.5rem' }} onClick={() => router.push('/')}>
+      <div style={{ fontSize: '2.5rem', cursor: 'pointer' }} onClick={() => router.push('/')}>
         Home
       </div>
       <div className={styles.navbarCustom}>

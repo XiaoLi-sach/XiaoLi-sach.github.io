@@ -4,7 +4,6 @@ import { serialize } from 'next-mdx-remote/serialize'
 import { GetStaticProps, GetStaticPaths } from 'next'
 import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote'
 
-import XImg from '@/components/XImg'
 import { IPost } from '@/types/post'
 import { getPost, getAllPosts } from '@/utils/post'
 import Prerequisites from '@/context/Prerequisites'

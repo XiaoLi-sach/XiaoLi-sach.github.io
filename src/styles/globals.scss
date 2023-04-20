@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import 'markdown.scss';
+@import 'markdown.mobile.scss';
+
 @layer components {
   .divider {
     @apply box-content my-12 h-px dark:bg-zinc-800 dark:border-black transition-colors;
@@ -121,4 +124,21 @@ button,
 input,
 textarea {
   outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        #ffffff 50%,
+        #ffffff 50%,
+        rgb(var(--background-end-rgb))
+      )
+      rgb(var(--background-start-rgb));
+  }
+
+  //* {
+  //  font-size: 1.2rem;
+  //}
 }

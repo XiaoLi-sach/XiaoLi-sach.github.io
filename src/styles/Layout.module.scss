@@ -1,6 +1,5 @@
 .container {
   min-height: 100vh;
-  background: rgba(255, 255, 255, 0.16);
   backdrop-filter: blur(120px);
 
   .containerBody {
@@ -63,6 +62,9 @@
 
 /* Mobile */
 @media (max-width: 870px) {
+  .navbar {
+    padding: 1rem 1rem;
+  }
   .navbarCustom {
     display: none;
   }
@@ -70,7 +72,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1rem;
+    padding: 0;
   }
   .navbarCustomMobile:hover {
     background: rgba(255, 255, 255, 0.16);

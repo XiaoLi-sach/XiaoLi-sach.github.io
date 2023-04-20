@@ -1,0 +1,38 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  border-radius: 0.25rem;
+  margin-top: 1rem;
+
+  .paginationItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #fff;
+
+    &-active {
+      z-index: 3;
+      color: #fff;
+      background-color: #009bb5;
+      border-color: #dee2e6;
+    }
+
+    .paginationItemText {
+      padding: 0.5rem 0.75rem;
+      margin-left: -1px;
+      line-height: 1.25;
+      cursor: pointer;
+
+      &:hover {
+        color: #009bb5;
+      }
+    }
+  }
+}

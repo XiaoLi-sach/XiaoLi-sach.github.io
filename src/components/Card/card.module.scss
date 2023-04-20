@@ -56,3 +56,18 @@
   border-radius: 6px;
   padding: 0.2rem 0.5rem;
 }
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0 0 1rem 0;
+  }
+
+  .divider {
+    width: 100%;
+    height: 1px;
+    background: rgb(var(--card-border-rgb));
+    margin: 0.5rem 0;
+  }
+}
