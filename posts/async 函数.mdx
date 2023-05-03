@@ -14,14 +14,14 @@ const readFile = function (fileName) {
 			resolve(data)
 		})
 	})
-	
+
 	const gen = function* () {
 		const f1 = yield readFile('/etc/hello')
 		console.log(f1.toString())
 	}
 }
 ~~~
-上面的 `gen` 写成 `async`函数：
+上面的 `gen` 写成 `async`函数：1
 
 ~~~js
 const asyncReadFile = async function() {
@@ -79,7 +79,7 @@ asyncPrint('hello world', 50)
 
 ##### **3. await 命令**
 
-正常情况下， `await `命令后面是一个 `Promise `对象， 返回该对象的结果。 如果不是 `Promise `对象， 就直接返回对应的值。 
+正常情况下， `await `命令后面是一个 `Promise `对象， 返回该对象的结果。 如果不是 `Promise `对象， 就直接返回对应的值。
 ~~~js
 async function f() {
 	return await 123 // 等同于 return 123
@@ -115,7 +115,7 @@ function sleep(interval) {
 	})
 }
 
-// 使用 
+// 使用
 async function one2FiveInAsync() {
 	for(let i=1; i<=5; i++) {
 		console.log(i)
