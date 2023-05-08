@@ -18,6 +18,7 @@
     "@types/react-dom": "18.0.11",
     "dayjs": "^1.11.7",
     "fast-glob": "^3.2.12",
+    "gitalk": "^1.8.0",
     "gray-matter": "^4.0.3",
     "next": "13.2.3",
     "next-mdx-remote": "^4.4.1",

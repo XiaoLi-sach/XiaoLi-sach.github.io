@@ -2,6 +2,7 @@ import '@/styles/globals.scss'
 import type { AppProps } from 'next/app'
 import { DefaultSeo } from 'next-seo'
 import config from '@/config'
+import 'gitalk/dist/gitalk.css'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

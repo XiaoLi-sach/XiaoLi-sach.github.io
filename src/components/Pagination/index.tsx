@@ -24,7 +24,7 @@ function Pagination(props: Props) {
       {
         Array.from({ length: props.total }).map((_, index) => {
           return (
-            <div className={styles.paginationItem} onClick={() => handleSizeChange(index + 1)}>
+            <div className={styles.paginationItem} key={index} onClick={() => handleSizeChange(index + 1)}>
               <span className={`${styles.paginationItemText} text-black dark:text-white`}>{index + 1}</span>
             </div>
           )

@@ -11,6 +11,7 @@ import { ParsedUrlQuery } from 'querystring'
 import Stacks from '@/context/Stacks'
 import DefaultLayout from '@/layouts/Default'
 import { MdxContext } from '@/utils/context'
+import Discuss from '@/components/Discuss'
 
 // props type
 type Props = {
@@ -96,6 +97,8 @@ const PostPage: React.FC<Props> = ({ source, frontMatter }: Props) => {
 
             <MDXRemote components={components} {...source} />
           </article>
+
+          <Discuss pathname={frontMatter.title} />
         </DefaultLayout>
       </MdxContext.Provider>
     </>
