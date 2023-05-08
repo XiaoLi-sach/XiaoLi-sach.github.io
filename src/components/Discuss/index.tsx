@@ -14,6 +14,7 @@ const discuss = (props: Props) => {
     repo: 'XiaoLi-sach.github.io',
     owner: 'XiaoLi-sach',
     admin: ['XiaoLi-sach'],
+    title: pathname,  // Issue 的标题
     id: pathname,      // Ensure uniqueness and length less than 50
     distractionFreeMode: false  // Facebook-like distraction free mode
   })
